@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=S2sPK6ZVpMU
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/pookiekun/AI-Medical-Voice-Agent/main/screenshots/screenshot.png)
+![App Screenshot](./screenshot.png)
 
 
 
