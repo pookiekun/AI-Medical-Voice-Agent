@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=S2sPK6ZVpMU
 ## ✨ Features
 
 * **🗣️ AI-Powered Voice Consultations**
-    * Engage in real-time, natural voice conversations with AI medical agents powered by [Vapi](https://vapi.ai/) and OpenAI.
+    * Engage in real-time, natural voice conversations with AI medical agents 
     * Experience low-latency interactions that feel like talking to a real doctor.
 
 * **🩺 Intelligent Specialist Matching**
