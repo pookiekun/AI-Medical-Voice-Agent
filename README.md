@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# AI-Medical-Voice-Agent
 
-First, run the development server:
+A full-stack AI-powered medical voice assistant built using Next.js, React, TypeScript, AssemblyAI, Clerk, and Neon DB. The application enables real-time voice-based interaction, converting patient speech into text, understanding symptoms using AI, and generating intelligent responses instantly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The system integrates real-time speech-to-text, secure user authentication, and cloud-based database storage to ensure privacy, scalability, and performance. Designed as a SaaS-style application, it demonstrates the practical use of AI and voice technology in healthcare-oriented solutions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://www.youtube.com/watch?v=S2sPK6ZVpMU
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![App Screenshot](./screenshot.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## ✨ Features
+
+* **🗣️ AI-Powered Voice Consultations**
+    * Engage in real-time, natural voice conversations with AI medical agents powered by [Vapi](https://vapi.ai/) and OpenAI.
+    * Experience low-latency interactions that feel like talking to a real doctor.
+
+* **🩺 Intelligent Specialist Matching**
+    * Automatically analyzes user-submitted symptoms and notes to recommend the most suitable specialist (e.g., Cardiologist, Dermatologist, Pediatrician).
+    * Utilizes advanced LLMs to match patient needs with specific AI doctor personas.
+
+* **🏥 Multi-Specialist Network**
+    * Access a diverse range of AI specialists including:
+        * **General Physician**: For primary care and common ailments.
+        * **Cardiologist**: For heart health and blood pressure.
+        * **Dermatologist**: For skin conditions and care.
+        * **Pediatrician**: For child health and development.
+        * **Psychologist**: For mental health support.
+        * **Nutritionist**: For diet and weight management.
+
+* **📝 Automated Medical Reports**
+    * Generates comprehensive consultation reports immediately after the call ends.
+    * Reports include structured data such as:
+        * **Chief Complaint & Summary**
+        * **Symptom Analysis** (Duration & Severity)
+        * **Medications Mentioned**
+        * **Actionable Recommendations**.
+
+* **📜 Live Transcription & History**
+    * View real-time transcripts of your conversation as it happens.
+    * Access a complete history of all past consultations and view generated reports at any time from the dashboard.
+
+* **🛡️ Secure Authentication**
+    * Integrated with [Clerk](https://clerk.com/) for secure user sign-up, sign-in, and profile management.
+
+* **⚡ Modern Tech Stack**
+    * Built with **Next.js 15**, **React 19**, **TailwindCSS**, and **Drizzle ORM** for a fast, responsive, and type-safe experience.
+
