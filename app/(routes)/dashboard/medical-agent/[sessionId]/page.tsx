@@ -118,17 +118,24 @@ function MedicalVoiceAgent() {
 
     const endCall = () => {
         if (!vapiInstance) return;
+        // Save the last live transcript as a message if it exists
+        if (liveTranscript && liveTranscript.length > 0 && currentRole) {
+            setMessages(prev => [...prev, { role: currentRole, content: liveTranscript }]);
+        }
         // Stop the call
         vapiInstance.stop();
         // Remove listeners (good for memory management)
-        vapiInstance.off('call-start');
-        vapiInstance.off('call-end');
-        vapiInstance.off('message');
-        vapiInstance.off('speech-start');
-        vapiInstance.off('speech-end');
+        vapiInstance.removeAllListeners('call-start');
+        vapiInstance.removeAllListeners('call-end');
+        vapiInstance.removeAllListeners('message');
+        vapiInstance.removeAllListeners('speech-start');
+        vapiInstance.removeAllListeners('speech-end');
         setCallStarted(false);
         setVapiInstance(null);
-        GenerateReport();
+        // Delay report generation to ensure message state is updated
+        setTimeout(() => {
+            GenerateReport();
+        }, 100);
     }
 
     const GenerateReport = async () => {

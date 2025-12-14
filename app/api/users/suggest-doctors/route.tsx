@@ -13,6 +13,7 @@ const freeModels = [
     "google/gemma-3-1b-it:free",
     "nousresearch/deephermes-3-llama-3-8b-preview:free",
     "meta-llama/llama-3.2-3b-instruct:free",
+    "mistralai/mistral-7b-instruct:free",
 ];
 
 export async function POST(req: NextRequest) {
