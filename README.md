@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=S2sPK6ZVpMU
 
 ## Features
 
-Based on the codebase provided, here is a structured **Features** section ready for your `README.md` file.
+
 
 ## ✨ Features
 
